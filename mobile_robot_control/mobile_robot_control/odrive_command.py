@@ -77,6 +77,10 @@ class odrive_command(Node):
         raise NotImplementedError("Differential Drive Controller, remove this line once implemented").
         # ----------------------------------------------------------------
 
+        # convert to turns per sec (ODrive Unit)
+        Vl = Vl / 2*math.pi
+        Vr = Vr / 2*math.pi
+
         self.feed_watchdog()
 
         if abs(Vl) <= 0.08:
