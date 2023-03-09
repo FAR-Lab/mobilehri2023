@@ -74,7 +74,7 @@ class odrive_command(Node):
         # TODO: Your Code Here -------------------------------------------
         Vl = 0
         Vr = 0
-        raise NotImplementedError("Differential Drive Controller, remove this line once implemented").
+        raise NotImplementedError("Differential Drive Controller, remove this line once implemented.")
         # ----------------------------------------------------------------
 
         # convert to turns per sec (ODrive Unit)
