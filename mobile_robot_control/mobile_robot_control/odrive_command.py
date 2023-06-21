@@ -78,8 +78,8 @@ class odrive_command(Node):
         # ----------------------------------------------------------------
 
         # convert to turns per sec (ODrive Unit)
-        Vl = Vl / 2*math.pi
-        Vr = Vr / 2*math.pi
+        Vl = Vl / (2*math.pi)
+        Vr = Vr / (2*math.pi)
 
         self.feed_watchdog()
 
